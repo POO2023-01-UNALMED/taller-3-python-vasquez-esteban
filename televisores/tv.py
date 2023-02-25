@@ -14,7 +14,7 @@ class TV:
         self._precio = 500
 
         self.control = Control()
-        _numTV += 1
+        TV._numTV += 1
     
     @classmethod
     def setNumTV(cls, numTV):
