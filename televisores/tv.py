@@ -6,7 +6,7 @@ class TV:
     
 
     def __init__(self, marca, estado):
-        self._estado = estado
+        self.estado = estado
         self._marca = marca
 
         self._canal = 1
@@ -55,30 +55,30 @@ class TV:
         return cls._numTV
 
     def turnOn(self):
-        self._estado = True
+        self.estado = True
 
     def turnOff(self):
-        self._estado = False
+        self.estado = False
 
     def getEstado(self):
-        return self._estado
+        return self.estado
 
     def canalUp(self):
-        if self._estado:
+        if self.estado:
             if self._canal < 120:
                 self._canal += 1
 
     def canalDown(self):
-        if self._estado:
+        if self.estado:
             if self._canal > 2:
                 self._canal -= 1
 
     def volumenUp(self):
-        if self._estado:
+        if self.estado:
             if self._volumen < 7:
                 self._volumen += 1
 
     def volumenDown(self):
-        if self._estado:
+        if self.estado:
             if self._volumen > 1:
                 self._volumen -= 1
