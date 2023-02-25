@@ -3,7 +3,7 @@ from televisores.control import Control
 
 class TV:
     _numTV = 0
-    _numTV += 1
+    
 
     def __init__(self, marca, estado):
         self._estado = estado
@@ -14,6 +14,7 @@ class TV:
         self._precio = 500
 
         self.control = Control()
+        _numTV += 1
     
     @classmethod
     def setNumTV(cls, numTV):
