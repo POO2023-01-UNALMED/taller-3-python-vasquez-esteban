@@ -15,6 +15,7 @@ class TV:
 
         self.control = Control()
     
+    @classmethod
     def setNumTV(cls, numTV):
         cls._numTV = numTV
         
