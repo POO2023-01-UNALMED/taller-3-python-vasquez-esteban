@@ -1,4 +1,4 @@
-from control import *
+from televisores.control import Control
 
 
 class TV:
