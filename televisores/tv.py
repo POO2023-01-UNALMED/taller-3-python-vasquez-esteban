@@ -14,7 +14,10 @@ class TV:
         self._precio = 500
 
         self.control = Control()
-
+    
+    def setNumTV(cls, numTV):
+        cls._numTV = numTV
+        
     def setMarca(self, marca):
         self._marca = marca
 
