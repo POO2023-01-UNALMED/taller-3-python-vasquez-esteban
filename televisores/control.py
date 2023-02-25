@@ -30,5 +30,5 @@ class Control:
     def setTV(self, tv):
         self.tv = tv
 
-    def getTV(self):
+    def getTv(self):
         return self.tv
