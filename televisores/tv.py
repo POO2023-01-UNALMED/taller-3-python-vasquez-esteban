@@ -1,3 +1,6 @@
+from control import Control
+
+
 class TV:
     _numTV = 0
     _numTV += 1
@@ -10,7 +13,7 @@ class TV:
         self._volumen = 1
         self._precio = 500
 
-        self.control = Control(self)
+        self.control = Control()
 
     def setMarca(self, marca):
         self._marca = marca
@@ -46,30 +49,30 @@ class TV:
         return cls._numTV
 
     def turnOn(self):
-        self._estado = "encendido"
+        self._estado = True
 
     def turnOff(self):
-        self._estado = "apagado"
+        self._estado = False
 
     def getEstado(self):
         return self._estado
 
     def canalUp(self):
-        if self._estado == "encendido":
+        if self._estado:
             if self._canal < 120:
                 self._canal += 1
 
     def canalDown(self):
-        if self._estado == "apagado":
+        if not self._estado:
             if self._canal > 2:
                 self._canal -= 1
 
     def volumenUp(self):
-        if self._estado == "encendido":
+        if self._estado:
             if self._volumen < 7:
                 self._volumen += 1
 
     def volumenDown(self):
-        if self._estado == "encendido":
+        if not self._estado:
             if self._volumen > 1:
                 self._volumen -= 1
