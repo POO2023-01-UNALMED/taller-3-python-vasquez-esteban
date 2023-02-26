@@ -15,17 +15,9 @@ class TV:
         self.control = Control()
         TV._numTV += 1
 
-
     @classmethod
     def setNumTV(cls, numTV):
         cls._numTV = numTV
-
-
-    
-    @classmethod
-    def setNumTV(cls, numTV):
-        cls._numTV = numTV
-        
 
     def setMarca(self, marca):
         self._marca = marca
