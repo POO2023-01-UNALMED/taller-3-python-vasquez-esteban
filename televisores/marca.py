@@ -7,6 +7,3 @@ class Marca:
 
     def setNombre(self, nombre):
         self._nombre = nombre
-
-
-
